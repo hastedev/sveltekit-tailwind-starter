@@ -1,7 +1,17 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
-	plugins: {
-		autoprefixer: {},
-		tailwindcss: {},
-		...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
-	}
-};
+    plugins: {
+        autoprefixer: {
+            cascade: true
+        },
+        tailwindcss: {},
+        ...(isProd
+            ? {
+                  cssnano: {
+                      preset: 'advanced'
+                  }
+              }
+            : {})
+    }
+}
