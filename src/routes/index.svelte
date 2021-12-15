@@ -1,5 +1,5 @@
 <script lang="ts">
-    import GithubIcon from "$lib/components/icons/GithubIcon.svelte"
+    import GithubIcon from '$lib/components/icons/GithubIcon.svelte'
 </script>
 
 <div class="h-screen w-screen flex justify-center items-center flex-col bg-white">
@@ -15,6 +15,7 @@
         target="_blank"
         href="https://github.com/bmkubia/sveltekit-tailwind-starter"
         class="fill-gray-600 hover:fill-gray-700 mt-2 p-2"
+        rel="noreferrer"
     >
         <GithubIcon />
     </a>
