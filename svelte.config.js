@@ -16,7 +16,6 @@ const config = {
 
     kit: {
         adapter: adapter(),
-        ssr: true,
         prerender: {
             crawl: true,
             enabled: true,
